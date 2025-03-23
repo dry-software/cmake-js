@@ -1,5 +1,5 @@
 {
-	"name": "cmake-js",
+	"name": "@dry-software/cmake-js",
 	"description": "CMake.js - a Node.js native addon build tool",
 	"license": "MIT",
 	"keywords": [
@@ -25,9 +25,9 @@
 	"author": "Gábor Mező aka unbornchikken",
 	"maintainers": [
 		{
-			"name": "Julian Waller",
-			"email": "git@julusian.co.uk",
-			"url": "https://github.com/julusian/"
+			"name": "dry Software UG (haftungsbeschränkt)",
+			"email": "info@dry.software",
+			"url": "https://dry.software"
 		}
 	],
 	"repository": {
