@@ -1,3 +1,7 @@
+# v7.3.1 - 23/03/25
+
+- feat(windows): support for arm64 node
+
 # v7.3.0 - 15/01/23
 
 - feat(windows): replace custom libnode.def generation with version from node-api-headers
