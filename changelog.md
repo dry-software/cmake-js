@@ -1,3 +1,7 @@
+# v7.3.2 - 22/01/26
+
+- chore: update dependencies
+
 # v7.3.1 - 23/03/25
 
 - feat(windows): support for arm64 node

@@ -21,7 +21,7 @@
 		"node-addon-api"
 	],
 	"main": "lib",
-	"version": "8.0.0",
+	"version": "7.3.2",
 	"author": "Gábor Mező aka unbornchikken",
 	"maintainers": [
 		{
