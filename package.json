@@ -21,7 +21,7 @@
 		"node-addon-api"
 	],
 	"main": "lib",
-	"version": "7.3.1",
+	"version": "8.0.0",
 	"author": "Gábor Mező aka unbornchikken",
 	"maintainers": [
 		{
@@ -41,26 +41,28 @@
 		"node": ">= 14.15.0"
 	},
 	"dependencies": {
-		"axios": "^1.6.5",
-		"debug": "^4",
-		"fs-extra": "^11.2.0",
-		"memory-stream": "^1.0.0",
-		"node-api-headers": "^1.1.0",
-		"npmlog": "^6.0.2",
-		"rc": "^1.2.7",
-		"semver": "^7.5.4",
-		"tar": "^6.2.0",
-		"url-join": "^4.0.1",
-		"which": "^2.0.2",
-		"yargs": "^17.7.2"
+		"axios": "1.13.2",
+		"debug": "4.4.3",
+		"fs-extra": "11.3.3",
+		"memory-stream": "1.0.0",
+		"node-api-headers": "1.7.0",
+		"npmlog": "7.0.1",
+		"rc": "1.2.8",
+		"semver": "7.7.3",
+		"tar": "7.5.6",
+		"url-join": "^5.0.0",
+		"which": "6.0.0",
+		"yargs": "18.0.0"
 	},
 	"devDependencies": {
-		"eslint": "^8.56.0",
-		"eslint-config-prettier": "^9.1.0",
-		"mocha": "*",
-		"nan": "^2.18.0",
-		"node-addon-api": "^6.1.0",
-		"prettier": "^3.2.2"
+		"@eslint/js": "^9.39.2",
+		"eslint": "9.39.2",
+		"eslint-config-prettier": "10.1.8",
+		"globals": "^17.0.0",
+		"mocha": "11.3.0",
+		"nan": "2.24.0",
+		"node-addon-api": "6.1.0",
+		"prettier": "3.8.1"
 	},
 	"scripts": {
 		"test": "mocha tests",
