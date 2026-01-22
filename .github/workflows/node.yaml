@@ -29,10 +29,6 @@ jobs:
             arch: arm64
             docker-arch: linux/arm64
             docker-image: node:24-bookworm
-          - os: ubuntu-latest
-            arch: arm
-            docker-arch: linux/arm/v7
-            docker-image: node:24-bookworm
           # linux-musl
           - os: ubuntu-latest
             arch: x64
