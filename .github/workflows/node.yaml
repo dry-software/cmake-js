@@ -52,7 +52,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           architecture: ${{ matrix.arch }}
-          node-version: 24.x
+          node-version: 24
 
       - name: run tests
         if: ${{ !matrix.docker-arch }}
