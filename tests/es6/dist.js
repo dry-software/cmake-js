@@ -1,8 +1,6 @@
-'use strict'
-
-const fs = require('fs-extra')
-const Dist = require('../../').Dist
-const assert = require('assert')
+import fs from 'fs-extra'
+import { Dist } from '../../lib/index.js'
+import assert from 'node:assert'
 
 const testDownload = process.env.TEST_DOWNLOAD === '1'
 

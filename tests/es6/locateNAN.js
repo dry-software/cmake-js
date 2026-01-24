@@ -1,8 +1,10 @@
-'use strict'
+import locateNAN from '../../lib/locateNAN.js'
+import path from 'node:path'
+import assert from 'node:assert'
+import { dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const locateNAN = require('../../lib/locateNAN')
-const path = require('path')
-const assert = require('assert')
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 /*
 

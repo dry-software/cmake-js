@@ -1,0 +1,15 @@
+# Source files (only ship dist/)
+/lib/
+/tsup.config.ts
+
+# Config files
+/eslint.config.js
+/.prettierrc.json
+/.gitignore
+/.gitattributes
+
+# Test and dev directories
+/tests/
+/.idea/
+/.github/
+/.claude/

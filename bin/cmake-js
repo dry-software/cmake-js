@@ -1,13 +1,18 @@
 #!/usr/bin/env node
-'use strict'
 
-const log = require('npmlog')
-const BuildSystem = require('../').BuildSystem
-const util = require('util')
-const version = require('../package').version
+import log from 'npmlog'
+import { BuildSystem } from '../lib/index.js'
+import util from 'node:util'
+import { createRequire } from 'node:module'
+import rc from 'rc'
+import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
+
+const require = createRequire(import.meta.url)
+const version = require('../package.json').version
 const logLevels = ['silly', 'verbose', 'info', 'http', 'warn', 'error']
 
-const npmConfigData = require('rc')('npm')
+const npmConfigData = rc('npm')
 for (const [key, value] of Object.entries(npmConfigData)) {
 	if (key.startsWith('cmake_js_')) {
 		const option = key.substr(9)
@@ -22,7 +27,7 @@ for (const [key, value] of Object.entries(npmConfigData)) {
 	}
 }
 
-const yargs = require('yargs')
+const yargsInstance = yargs(hideBin(process.argv))
 	.usage('CMake.js ' + version + '\n\nUsage: $0 [<command>] [options]')
 	.version(version)
 	.command('install', 'Install Node.js distribution files if needed')
@@ -173,12 +178,13 @@ const yargs = require('yargs')
 			type: 'string',
 		},
 	})
-const argv = yargs.argv
+
+const argv = await yargsInstance.argv
 
 // If help, then print and exit:
 
 if (argv.h) {
-	console.info(yargs.help())
+	console.info(await yargsInstance.getHelp())
 	process.exit(0)
 }
 

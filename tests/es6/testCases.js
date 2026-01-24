@@ -1,9 +1,11 @@
-'use strict'
-const assert = require('assert')
-const lib = require('../../')
-const BuildSystem = lib.BuildSystem
-const path = require('path')
-const fs = require('fs-extra')
+import assert from 'node:assert'
+import { BuildSystem } from '../../lib/index.js'
+import path from 'node:path'
+import fs from 'fs-extra'
+import { dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const testCases = {
 	buildPrototypeWithDirectoryOption: async function (options) {
@@ -82,4 +84,4 @@ const testCases = {
 	},
 }
 
-module.exports = testCases
+export default testCases

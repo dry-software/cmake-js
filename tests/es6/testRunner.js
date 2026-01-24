@@ -1,9 +1,6 @@
-'use strict'
-
-const lib = require('../../')
-const environment = lib.environment
-const log = require('npmlog')
-const util = require('util')
+import { environment } from '../../lib/index.js'
+import log from 'npmlog'
+import util from 'node:util'
 
 function* generateRuntimeOptions() {
 	function* generateForNode(arch) {
@@ -100,4 +97,4 @@ const testRunner = {
 	},
 }
 
-module.exports = testRunner
+export default testRunner

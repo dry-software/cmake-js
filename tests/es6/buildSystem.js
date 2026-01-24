@@ -1,13 +1,14 @@
-'use strict'
+import assert from 'node:assert'
+import { CMake } from '../../lib/index.js'
+import locateNAN from '../../lib/locateNAN.js'
+import path from 'node:path'
+import log from 'npmlog'
+import testRunner from './testRunner.js'
+import testCases from './testCases.js'
+import { dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const assert = require('assert')
-const lib = require('../../')
-const locateNAN = require('../../lib/locateNAN')
-const CMake = lib.CMake
-const path = require('path')
-const log = require('npmlog')
-const testRunner = require('./testRunner')
-const testCases = require('./testCases')
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 describe('BuildSystem', function () {
 	this.timeout(300000)

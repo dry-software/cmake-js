@@ -1,4 +1,3 @@
-'use strict'
-require('./dist')
-require('./buildSystem')
-require('./locateNAN')
+import './dist.js'
+import './buildSystem.js'
+import './locateNAN.js'

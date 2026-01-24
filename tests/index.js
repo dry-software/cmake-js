@@ -1,1 +1,1 @@
-require('./es6')
+import './es6/index.js'
