@@ -35,7 +35,7 @@ export default defineConfig({
   onSuccess: async () => {
     const fs = await import("fs-extra");
     await fs.copy("lib/cpp", "dist/cpp");
-    await fs.ensureDir("dist/import");
-    await fs.copy("lib/import/Find-VisualStudio.cs", "dist/import/Find-VisualStudio.cs");
+    // Copy directly to dist/ since bundled code's __dirname points there
+    await fs.copy("lib/import/Find-VisualStudio.cs", "dist/Find-VisualStudio.cs");
   },
 });

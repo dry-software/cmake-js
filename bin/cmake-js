@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import log from 'npmlog'
-import { BuildSystem } from '../lib/index.js'
+import { BuildSystem } from '../dist/index.mjs'
 import util from 'node:util'
 import { createRequire } from 'node:module'
 import rc from 'rc'

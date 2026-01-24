@@ -29,7 +29,7 @@
 			"require": "./dist/index.cjs"
 		}
 	},
-	"version": "7.3.3",
+	"version": "7.3.5",
 	"author": "Gábor Mező aka unbornchikken",
 	"maintainers": [
 		{
@@ -46,7 +46,7 @@
 		"cmake-js": "./bin/cmake-js"
 	},
 	"engines": {
-		"node": ">= 14.15.0"
+		"node": ">= 22"
 	},
 	"dependencies": {
 		"axios": "1.13.2",
@@ -58,12 +58,12 @@
 		"rc": "1.2.8",
 		"semver": "7.7.3",
 		"tar": "7.5.6",
-		"url-join": "^5.0.0",
+		"url-join": "5.0.0",
 		"which": "6.0.0",
 		"yargs": "18.0.0"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.39.2",
+		"@eslint/js": "9.39.2",
 		"eslint": "9.39.2",
 		"eslint-config-prettier": "10.1.8",
 		"globals": "17.0.0",
@@ -71,8 +71,8 @@
 		"nan": "2.24.0",
 		"node-addon-api": "8.5.0",
 		"prettier": "3.8.1",
-		"tsup": "^8.5.1",
-		"typescript": "^5.9.3"
+		"tsup": "8.5.1",
+		"typescript": "5.9.3"
 	},
 	"scripts": {
 		"build": "tsup",
